@@ -1,0 +1,132 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body{
+    height: 100%;
+   
+}
+
+
+.header-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/backgrnd.jpg"); /*<--- Change to change the image*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+}
+
+
+.kozep{
+    position: relative !important;
+    top: 50% !important;
+    -webkit-transform: translateY(280%) !important;
+    -ms-transform: translateY(280%) !important;
+    transform: translateY(280%) !important;
+}
+
+.between-image{
+    background-image: url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #999;
+    height: auto !important;
+    display: block;
+    height: 75vh !important;
+    margin-left: auto !important;
+    margin-right: auto !important;   
+}
+
+
+.body-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.foodbusinessnews.net%2Fext%2Fresources%2F2020%2F4%2FCoupleAtRestaurant_Lead.jpg%3Ft%3D1587991293%26width%3D1080&f=1&nofb=1&ipt=89c0b6bed66712bcc1431d6c6bdf020dd8d8c04fd47602aa9f6eba91dd5713fa&ipo=images); /*<--- Change to change the image*/
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-color: #999;
+height: 70vh !important;
+}
+
+
+a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #E1D9D1 !important;
+}
+
+a {
+    letter-spacing: 0.1rem !important;
+}
+.instagram, .facebook{
+    transition: all 0.5s ease-in-out;
+}
+.instagram:hover{
+    font-size: 1.2rem;
+}
+.facebook:hover{
+    font-size: 1.2rem;
+   
+}
+.navbar-item{
+    transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+
+    }
+
+    .navbar-item:hover {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .navbar-brand {
+        margin: 0px !important;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .between-image {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+
+/* CONTACT */
+
+.contact-image{
+       
+        background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.architecturaldigest.in%2Fwp-content%2Fuploads%2F2019%2F08%2Frope-cafe-ahmedabad-featured-image.jpg&f=1&nofb=1&ipt=69fc37a8da069a0be73a6c104f09e1d82753e4b421966b446e3460c0db86c55f&ipo=images);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: #999;
+        height: auto !important;
+        display: block;
+        height: 60vh !important;
+        margin-left: auto !important;
+        margin-right: auto !important;   
+    
+}
+
+input:focus{
+  
+    outline:solid 1px black !important;
+}
+input{
+    outline:solid 1px silver;
+}
+
+.submit:hover{
+    background-color: black !important;
+    opacity: 0.5 !important;
+    
+}

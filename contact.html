@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bymtea</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma-spacing">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</head>
+<style>
+
+
+</style>
+
+<body>
+
+    <!--First page-->
+    <section id="first" class="hero contact-image">
+
+        <div class="hero-head">
+
+            <header class="navbar is-spaced is-size-3 is-fixed-top" role="navigation" aria-label="main navigation"
+                id="change">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item has-text-white is-family-code mt-1 ml-6">
+                            Bym tea
+                        </a>
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                            data-target="burgerMenu" id="burger"
+                            onclick="this.classList.toggle('is-active');document.querySelector('#'+this.dataset.target).classList.toggle('is-active');">
+                            <span aria-hidden="true" class="has-text-white"></span>
+                            <span aria-hidden="true" class="has-text-white"></span>
+                            <span aria-hidden="true" class="has-text-white"></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="burgerMenu" class="navbar-menu has-text-black">
+                    <div class="navbar-end mr-4">
+                        <a href="index.html" class="navbar-item is-family-monospace has-text-white-bis is-size-5 pr-5">
+                            HOME
+                        </a>
+                        <a class="navbar-item has-text-warning is-family-monospace is-size-5 pr-5">
+                            CONTACT
+                        </a>
+                        <a class="navbar-item has-text-white-bis is-family-monospace is-size-5 pr-5">
+                            MENU
+                        </a>
+                        <a class="navbar-item has-text-white-bis is-family-monospace is-size-5 pr-5">
+                            BOOK A TABLE
+                        </a>
+                    </div>
+                </div>
+
+        </div>
+        <div class="hero-body ">
+            <div class="container has-text-centered">
+                <h1 class="title has-text-white is-family-monospace pb-5 is-size-1 has-text-weight-light kozep">
+                    CONTACT
+                </h1>
+            </div>
+        </div>
+        </header>
+
+
+
+    </section>
+
+
+
+
+
+    </section>
+    <section id="third">
+        <section class="hero pt-6">
+            <div class="hero-body ">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            
+                            <div class="field pb-5 pt-6">
+                                <label class="label has-text-weight-medium">Name *</label>
+                                <div class="control">
+                                  <input class="input has-background-light" type="text" placeholder="" required>
+                                </div>
+                              </div>
+                              
+                              <div class="field pb-5">
+                                <label class="label has-text-weight-medium">Email address *</label>
+                                <div class="control">
+                                  <input class="input has-background-light " type="email" placeholder="" required>
+                                </div>
+                              </div>
+
+                              <div class="field">
+                                <label class="label has-text-weight-medium">Subject *</label>
+                                <div class="control">
+                                  <input class="input has-background-light " type="email" placeholder="" required>
+                                </div>
+                              </div>
+
+                              <div class="field">
+                                <label class="label has-text-weight-medium">Message *</label>
+                                <textarea class="textarea has-background-light" placeholder=""></textarea>
+                              </div>
+                            
+                              <a class="button is-dark submit">Submit</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="hero">
+        <div class="hero-foot pb-6">
+            <div class="container has-text-centered pt-6">
+                
+
+                <h2 class="has-text-weight-bold has-text-black">Bym Tea Budapest</h2>
+
+                <div class="where pb-6">
+                    <p>Shop 19, 200 Barangaroo Avenue</p>
+                    <p>Barangaroo NSW</p>
+                </div>
+                <div class="open pb-6">
+                    <p>Mon - Fri: 07:30 - 14:30</p>
+                    <p>Sat - Sun: 09:00 - 15:00</p>
+                    <p>+62 21 7278 1590</p>
+                </div>
+                <div class="instagram is-inline-block">
+                    <a href="#"><i class="fa-brands fa-instagram fa-xl pr-3 has-text-black"></i></a>
+                </div>
+                <div class="facebook is-inline-block">
+                    <a href="#"><i class="fa-brands fa-facebook-f fa-xl has-text-black"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+
+
+        $(window).scroll(function () {
+            var height = $(window).scrollTop();
+
+            if (height > 5) {
+                $('#change').css('background-color', 'rgba(0,0,0,0.3)',)
+            } else {
+                $('#change').css('background-color', 'rgba(0,0,0,0)')
+            }
+        });
+        $(document).ready(function () {
+            $("body").css("display", "none");
+            $("body").fadeIn(800);
+        });
+
+    </script>
+</body>
+
+</html>
